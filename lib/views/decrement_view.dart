@@ -15,6 +15,7 @@ class DecrementView extends StatelessWidget {
           children: <Widget>[
             CustomCounterContainer(
               counterValue: _counterValue,
+              gradientColors: [Colors.greenAccent, Colors.cyanAccent],
             ),
             SizedBox(height: 32),
             Text(

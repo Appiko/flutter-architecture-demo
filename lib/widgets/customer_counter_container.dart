@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 
 class CustomCounterContainer extends StatelessWidget {
   final int counterValue;
-  const CustomCounterContainer({Key key, this.counterValue}) : super(key: key);
+  final List<Color> gradientColors;
+  const CustomCounterContainer(
+      {Key key, this.counterValue, this.gradientColors})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +15,7 @@ class CustomCounterContainer extends StatelessWidget {
       width: size.width * 0.6,
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Colors.pinkAccent, Colors.purple],
+          colors: gradientColors ?? [Colors.pinkAccent, Colors.purple],
           begin: Alignment(0, 0),
           end: Alignment(1, 1),
         ),
