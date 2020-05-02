@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_architecture_demo/constants.dart';
 import 'package:flutter_architecture_demo/views/decrement_view.dart';
-import 'package:flutter_architecture_demo/views/homepage_view.dart';
+import 'package:flutter_architecture_demo/views/home_view.dart';
 
 // Handles the route generation
 Route<dynamic> generateRoute(RouteSettings settings) {
@@ -9,7 +9,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
     case rootViewRoute:
       return MaterialPageRoute(
         settings: settings,
-        builder: (context) => MyHomePage(),
+        builder: (context) => HomeView(),
       );
       break;
     case decrementViewRoute:

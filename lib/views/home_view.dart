@@ -4,7 +4,7 @@ import 'package:flutter_architecture_demo/services/counter_service.dart';
 import 'package:flutter_architecture_demo/widgets/customer_counter_container.dart';
 import 'package:provider/provider.dart';
 
-class MyHomePage extends StatelessWidget {
+class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final int _counterValue = Provider.of<CounterService>(context).counterValue;
